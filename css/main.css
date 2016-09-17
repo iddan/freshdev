@@ -1,0 +1,80 @@
+body {
+  font-family: 'Monaco', 'Roboto Mono', monospace;
+  color: #263238;
+  text-align: center;
+  margin: 0; }
+
+a {
+  color: inherit; }
+
+header {
+  display: flex; }
+  header a img {
+    height: 2.5em;
+    margin: 2.6em 2.6em 0; }
+
+h1,
+h2,
+h5,
+h6 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 2em;
+  color: #546E7A;
+  margin: 1.3em 1.3em 0;
+  flex: 1;
+  text-align: left; }
+
+h2 {
+  font-size: 1.5em;
+  margin: .5em 0 1em;
+  color: #455A64; }
+
+#icon {
+  height: 11.8em; }
+
+p {
+  max-width: 29em;
+  padding: 0 1em;
+  margin: 0 auto 1em; }
+
+button.chrome {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  font-family: 'Helvetica Neue', 'Roboto', sans-serif;
+  overflow: hidden;
+  background: #fff;
+  border-radius: .125em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow .25s;
+  width: 14em;
+  padding: .5em;
+  margin: 2.5em auto 3em;
+  display: block;
+  text-align: left; }
+  button.chrome:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19); }
+  button.chrome img {
+    width: 3em;
+    float: left;
+    margin-right: .5em; }
+  button.chrome h5,
+  button.chrome h6 {
+    margin: 0;
+    text-decoration: none; }
+  button.chrome h5 {
+    font-size: 1.125em; }
+  button.chrome h6 {
+    font-size: 0.875em; }
+
+footer {
+  width: calc(100% - 2em);
+  padding: 1em;
+  position: absolute;
+  font-size: .75em;
+  bottom: 0; }
+
+/*# sourceMappingURL=main.css.map */

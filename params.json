@@ -1,6 +1,0 @@
-{
-  "name": "Freshdev",
-  "tagline": "Autoreloads unpacked extensions",
-  "body": "# Freshdev\r\n\r\n## Autoreloads unpacked extensions\r\n\r\nDevelop extensions faster by reloading your under-development extensions every time you load (or reload) a site.\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
