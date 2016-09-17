@@ -1,0 +1,20 @@
+{
+    "name": "freshdev",
+    "version": "1.0.0",
+    "description": "Autoreloads unpacked extensions",
+    "author": "Iddan Aharonon",
+    "homepage": "https://aniddan.github.io/freshdev/",
+    "scripts": {
+        "build": "zip freshdev.zip icons/* index.js manifest.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aniddan/freshdev.git"
+    },
+    "bugs": {
+        "url": "https://github.com/aniddan/freshdev/issues",
+        "email": "mail@iddan.co"
+    },
+    "license": "MIT",
+    "main": "index.js"
+}

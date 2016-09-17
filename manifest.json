@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Freshdev",
+    "description": "Autoreloads unpacked extensions",
+    "author": "Iddan Aharonson",
+    "homepage_url": "https://aniddan.github.io/freshdev/",
+    "version": "1.0.0",
+    "icons": {
+        "8": "icons/icon8.png",
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "minimum_chrome_version": "45",
+    "background": {
+        "scripts": [
+            "index.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "management",
+        "tabs"
+    ]
+}
