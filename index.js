@@ -6,13 +6,12 @@
  * @typedef {object} ExtensionInfo
  */
 
-let {management: {getSelf, getAll, setEnabled}, tabs} = chrome;
+let {management: {getSelf, getAll, setEnabled}, webNavigation} = chrome;
 
-tabs.onUpdated.addListener((tabId, {status}) => {
-    if (status === 'loading') {
-        getSelf(self => getAll(extensions => reloadDevelopment(self, extensions)));
-    }
-});
+webNavigation.onBeforeNavigate.addListener((details) =>
+    details.frameId === 0 &&
+    getSelf(self => getAll(extensions => reloadDevelopment(self, extensions)))
+);
 
 /**
  * Reload all enabled extensions under development
@@ -20,7 +19,7 @@ tabs.onUpdated.addListener((tabId, {status}) => {
  * @param {ExtensionInfo[]} extensions - An array all of the user's extension.
 */
 
-function reloadDevelopment (self, extensions)  {
+function reloadDevelopment (self, extensions) {
     for (let {id, installType, enabled} of extensions) {
         if (id !== self.id && installType === 'development' && enabled) {
             reload(id);
