@@ -4,7 +4,7 @@
     "description": "Autoreloads unpacked extensions",
     "author": "Iddan Aharonson",
     "homepage_url": "https://aniddan.github.io/freshdev/",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
         "8": "icons/icon8.png",
         "16": "icons/icon16.png",

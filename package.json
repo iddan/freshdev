@@ -1,6 +1,6 @@
 {
     "name": "freshdev",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Autoreloads unpacked extensions",
     "author": "Iddan Aharonon",
     "homepage": "https://aniddan.github.io/freshdev/",
